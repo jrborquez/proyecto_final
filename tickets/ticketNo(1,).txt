@@ -2,7 +2,7 @@ Burger Bros
  =======================
  Ticket de Venta
  Pedido No. (1,)
- Cliente: ('Joe',)
+ Cliente: ('Carlos',)
 =======================
- ('Colonial',)
+ ('La Famosa',)
   (200.0,)

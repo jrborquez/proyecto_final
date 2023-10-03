@@ -2,7 +2,7 @@ Burger Bros
  =======================
  Ticket de Venta
  Pedido No. (2,)
- Cliente: ('Rosa',)
+ Cliente: ('Maria Guadalupe',)
 =======================
- ('LA Roster',)
+ ('La Tropical',)
   (300.0,)

@@ -14,14 +14,4 @@ class Autenticacion:
                 print("Error de login")
             else:
                 is_login = True
-                
-    def verificarAutenticacionFlask(self, a, b):
-        """esta función es para verificar la autenticidad en Flask"""
-        is_login = False
-        while not is_login :
-            usuario = 'admin'
-            password = '123'
-            if usuario != a or password != b:
-                print("Error de login")
-            else:
-                is_login = True
+            
