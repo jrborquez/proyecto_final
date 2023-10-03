@@ -26,7 +26,7 @@ def paginaPrincipal():
 def imprimirInfo():
     
     """esta función nos renderiza nuestra página info.html, pero aún más importante, es donde jalamos la variable id_pedido, para buscarla
-    en nuestra base de datos, nos arroje el resultado de su búsqueda y nos ayude a renderizar una tabla con el resultado.
+    en nuestra base de datos localizada fuera el ambiente Flask, nos arroje el resultado de su búsqueda y nos ayude a renderizar una tabla con el resultado.
     
     El print de la excepción debió ser cambiado por una variable que arroje el resultado de haber la excepción, pero el Flask, nos arroja un
     error en consola, ya que no obtiene un valor, sino hasta que la excepción se activa.  Para efectos funcionales, así se queda.
