@@ -113,10 +113,10 @@ class Pedidos:
                 self.mostrarListaPedidos()
                 print("------------------------------------")
                 id_pedido = self.ingresarID("Ingresa el Número del pedido a cancelar \n")
-                encontrar_pedido = cursor.execute("SELECT * FROM pedidos WHERE pedido = ?", (id_pedido))     
+                encontrar_pedido = cursor.execute("SELECT * FROM pedidos WHERE pedido = ?", (id_pedido,))     
                 if len(encontrar_pedido.fetchall()) == 1:
                     sql = ''' DELETE FROM pedidos WHERE pedido = ? '''
-                    cursor.execute(sql,(id_pedido))
+                    cursor.execute(sql,(id_pedido,))
                     conexion.commit()
                     print("Registro eliminado correctamente")
                     print("------------------------------------")
