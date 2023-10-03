@@ -5,7 +5,10 @@
 BURGER BROS
 Restaurante de Hamburguesas
 
-APP Burger BROS v1.0
+APP Burger BROS v1.0 
+
+
+APP BURGER BROS
 
 Bienvenidos al README file de la APP Burger Bros.  En esta app podrás el usuario
 acceder a los pedidos, clientes y menú del Restaurante.  Desarrollado en Python, 
@@ -99,6 +102,7 @@ introduciendo datos inválidos, esto con el fin de proteger la integridad de la 
 En caso de FALLA
     En caso de que exista alguna falla en el Sistema, favor de encontrar el error impreso en
     consola, para poder comunicarse con el encargado de Sistemas.
+
 
 
 Desarrollado por JOSE ARNOLDO ROJO BORQUEZ  email: jrborquez@gmail.com

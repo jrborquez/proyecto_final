@@ -1,0 +1,8 @@
+Burger Bros
+ =======================
+ Ticket de Venta
+ Pedido No. (1,)
+ Cliente: ('Joe',)
+=======================
+ ('Colonial',)
+  (200.0,)

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del Pedido</title>
+
+</head>
+<body>
+    <h3>{{"msg"}}</h3>
+    <h1>Bienvenidos a BurgerBros</h1>
+    <h2>Información del Pedido:</h2>
+
+    <table border = 1>
+        <thead>
+           <td>#</td>
+           <td>Cliente>/td<
+           <td>Producto</td>
+           <td>Precio</td>
+        </thead>
+        
+        {% for row in rows %}
+           <tr>
+              <td>{{row["pedido"]}}</td>
+              <td>{{row["cliente"]}}</td>
+              <td> {{ row["producto"]}}</td>
+              <td>{{row['precio']}}</td>	
+           </tr>
+        {% endfor %}
+     </table>
+     
+     <a href = "/">Go back to home page</a>
+    
+
+    
+    
+</body>
+</html>

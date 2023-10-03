@@ -175,4 +175,4 @@ class Pedidos:
                 print('Error al capturar un dato: {}'.format(e))
                 print('Intente de nuevo ingresar los datos \n')
                 datos_incorrectos = True
-        return cliente, producto,precio
+        return cliente, producto, precio

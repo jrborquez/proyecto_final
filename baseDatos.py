@@ -3,13 +3,21 @@ import os
 from autenticacionBd import Autenticacion
 
 class BaseDatos:
-    
+    """Clase para acceder a nuestra Base de datos, crearla y/o manipularla
+    """
     def __init__(self, nombreBaseDatos):
+        """Nuestro constructor, donde recibe un argumento, el nombre de nuestra base de datos.
+
+        Args:
+            nombreBaseDatos (string): Nombre de nuestra base de datos, el que le queramos dar.
+        """
         self.nombreBaseDatos = nombreBaseDatos
         self.autenticacionBd = Autenticacion()
         
 
     def crearBaseDatos(self):
+        """Crea nuestra base de datos, al igual que hace el llamado a las funciones para crear las tablas que lleva dentro
+        """
         try:
             conn = sqlite3.connect(self.nombreBaseDatos)
             self.crearTablaPedidos()
@@ -20,12 +28,19 @@ class BaseDatos:
 
 
     def verificarBaseDatosExiste(self):
+        """Verifica si ya existe el archivo de la base de datos
+
+        Returns:
+            Boleano: solo verifica, lanza un verdadero o falso, para la siguiente etapa de otra función que la llama.
+        """
         if os.path.isfile(self.nombreBaseDatos):
             return True
         else:
             return False
 
     def crearTablaPedidos(self):
+        """crea la tabla de Pedidos
+        """
         conexion = self.abrirConexion()
 
         conexion.execute('''CREATE TABLE pedidos
@@ -39,6 +54,8 @@ class BaseDatos:
             
             
     def crearTablaClientes(self):
+        """crea nuestra tabla de clientes
+        """
         conexion = self.abrirConexion()
 
         conexion.execute('''CREATE TABLE clientes
@@ -54,6 +71,8 @@ class BaseDatos:
         
             
     def crearTablaMenu(self):
+        """crea nuestra tabla de menú de productos
+        """
         conexion = self.abrirConexion()
 
         conexion.execute('''CREATE TABLE menu
@@ -67,6 +86,11 @@ class BaseDatos:
     
         
     def abrirConexion(self):
+        """abre la conexión con nuestra base de datos
+
+        Returns:
+            variable: la variable es la conexión a nuestra base de datos
+        """
         try:
             conexion = sqlite3.connect(self.nombreBaseDatos) 
             return conexion

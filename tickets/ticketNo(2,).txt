@@ -1,0 +1,8 @@
+Burger Bros
+ =======================
+ Ticket de Venta
+ Pedido No. (2,)
+ Cliente: ('Rosa',)
+=======================
+ ('LA Roster',)
+  (300.0,)
